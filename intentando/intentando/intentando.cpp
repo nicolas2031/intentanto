@@ -12,15 +12,20 @@ int main()
 
 	std::cin >> x;
 
-	if (x == 20 || x == 31) {
+	if ( 0 < x < 100) {
 
+		if (x < 10) {
+			std::cout << "es un niño" << std::endl;
+		}
 			
-
-		std::cout << "eres muy suertudo" << std::endl;
+		if (x < 50) {
+			std::cout << "eres muy joven" << std::endl;
+		}
+		
 	}
 
 	else{
-		std::cout << "no tienes suerte" << std::endl;
+		std::cout << "edad incorrecta" << std::endl;
 	}
 	
 	return 0;
